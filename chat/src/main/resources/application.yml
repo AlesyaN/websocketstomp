@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: chat
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:9000/eureka}
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true
